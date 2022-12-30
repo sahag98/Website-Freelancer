@@ -1,0 +1,57 @@
+.intro {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+
+.about {
+    background-color: #DEE2E6;
+    flex: 1;
+    padding: 6rem 3rem;
+}
+
+.about>h2,
+.mission>h2 {
+
+    margin-bottom: 1rem;
+}
+
+
+.about>p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.mission {
+    background-color: var(--primary-bg);
+    flex: 1;
+    padding: 6rem 3rem;
+}
+
+.mission>p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+@media screen and (max-width:900px) {
+    .intro {
+        flex-direction: column;
+        margin: 0rem 0rem;
+    }
+
+    .about>p {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .mission>p {
+        width: 100%;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
