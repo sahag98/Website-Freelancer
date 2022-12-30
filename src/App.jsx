@@ -19,7 +19,7 @@ function App() {
     fullScreen: { enable: false, zIndex: -1 },
     particles: {
       number: {
-        value: 80,
+        value: 70,
         density: {
           enable: true,
           area: 1500
