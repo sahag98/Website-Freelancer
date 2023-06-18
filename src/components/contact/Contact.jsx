@@ -45,8 +45,8 @@ const Contact = () => {
                     handleClick();
                 });
         }
-        catch {
-
+        catch (err) {
+            console.log(err)
         }
     }
     const formik = useFormik({

@@ -84,6 +84,8 @@ li {
     overflow-y: hidden;
 }
 
+
+
 .open-logo {
     width: 70%;
     height: 70%;
@@ -92,9 +94,9 @@ li {
 .motion-div {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     padding: 1rem;
-    width: 80%;
+    width: 300px;
     height: 100vh;
     background: url('../../assets/bg-nav.png');
     background-size: cover;
@@ -104,7 +106,12 @@ li {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    transition: all 1s ease;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+
+.active {
+    right: 0;
 }
 
 .X-logo {

@@ -2,23 +2,24 @@ import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import './navbar.css'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
+import { RxHamburgerMenu } from 'react-icons/rx'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
-    const menuVariants = {
-        opened: {
-            top: 0,
-            transition: {
-                when: "beforeChildren",
-                staggerChildren: 0.5,
-            },
-        },
-        closed: {
-            top: '-100vh',
-        },
-    };
+    // const menuVariants = {
+    //     opened: {
+    //         top: 0,
+    //         transition: {
+    //             when: "beforeChildren",
+    //             staggerChildren: 0.5,
+    //         },
+    //     },
+    //     closed: {
+    //         top: '-100vh',
+    //     },
+    // };
 
     const linkVariants = {
         opened: {
@@ -46,13 +47,10 @@ const Navbar = () => {
             </ul>
 
             <div className="navbar-menu">
-                <HiMenuAlt4 className='open-logo' onClick={() => setToggle(!toggle)} />
+                <RxHamburgerMenu className='open-logo' onClick={() => setToggle(!toggle)} />
 
-                <motion.div
-                    initial={false}
-                    className='motion-div'
-                    variants={menuVariants}
-                    animate={toggle ? "opened" : "closed"}
+                <div
+                    className={'motion-div ' + (toggle && "active")}
                 >
                     <HiX className='X-logo' onClick={() => setToggle(false)} />
                     <ul className='mobile-ul' >
@@ -62,7 +60,7 @@ const Navbar = () => {
                             </motion.li>
                         ))}
                     </ul>
-                </motion.div>
+                </div>
 
             </div>
         </nav>
