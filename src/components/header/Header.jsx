@@ -9,7 +9,7 @@ const Header = () => {
             <div className='header-wrapper'>
                 <div className='header-left'>
                     <h1 className='header-title'>Building Personalized Websites For You</h1>
-                    <a href="#contact" style={{marginRight:20}}>
+                    <a href="#contact">
                         <motion.button
                             whileHover={{
                                 scale: 1.02,

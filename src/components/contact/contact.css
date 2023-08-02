@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e1e9f0;
     /* background-color: var(--secondary-bg); */
 }
 
@@ -12,7 +13,7 @@
     margin-right: 3rem;
     padding: 2rem;
     background-color: var(--secondary-bg);
-    border-radius: 25px;
+    border-radius: 10px;
     /* background: #efefef; */
     /* box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #eaeaea; */
@@ -33,9 +34,8 @@
 
 
 .contact-form {
-    border-radius: 10px;
     background-color: var(--secondary-bg);
-    border-radius: 25px;
+    border-radius: 10px;
     background: #efefef;
 }
 
