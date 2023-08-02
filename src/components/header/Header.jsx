@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import responsive from '../../assets/responsive.png'
+import responsive from '../../assets/web.svg'
 import { motion } from 'framer-motion'
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
                     <a href="#contact">
                         <motion.button
                             whileHover={{
-                                scale: 1.1,
+                                scale: 1.02,
                             }}
                             className='header-button'>
                             Get Started

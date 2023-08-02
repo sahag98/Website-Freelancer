@@ -1,38 +1,44 @@
 .intro {
     display: flex;
     align-items: center;
+    gap: 30px;
+    margin: 0px 30px 0px 30px;
     color: var(--primary-text-color);
 }
 
 .about {
-    background-color: #DEE2E6;
-    flex: 1;
+    background-color: #4b7482;
     padding: 6rem 3rem;
+    border-radius: 10px;
 }
 
-.about>h2,
-.mission>h2 {
+.about>h2{
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
 
+.mission>h2 {
     margin-bottom: 1rem;
 }
 
 
 .about>p {
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
+    color: whitesmoke;
     font-size: 1rem;
     line-height: 30px;
 }
 
 .mission {
-    background-color: var(--primary-bg);
-    flex: 1;
+    background-color:#cfd1d0;
     padding: 6rem 3rem;
+    border-radius: 10px;
 }
 
 .mission>p {
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 30px;
 }
