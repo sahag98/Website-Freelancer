@@ -1,24 +1,36 @@
 import React from 'react'
 import './intro.css'
+import {MdPayment} from 'react-icons/md'
+import {AiOutlineCheckSquare} from 'react-icons/ai'
+import {CgWebsite} from 'react-icons/cg'
 
 const Intro = () => {
     return (
         <div data-aos="fade-up" className='intro' id='about'>
+            <h2>Why Choose Me?</h2>
+            <div className='intro-cards'>
             <div className='about'>
-                <h2>About Me</h2>
+            <MdPayment size={50} color='#103845' />
+                <h2>Payment Arrangement</h2>
+                
                 <p>
-                    Currently I’m a website freelancer and I’m looking for opportunities to build websites
-                    for businesses just like you and gain the necessary experience
-                    to land a software engineering job! Take a look at the services I offer and let me know if you are
-                    interested by filling out the contact form!
+                Pay 50% of the total cost upfront. Once the job has been successfully completed to your satisfaction, the remaining balance can be settled promptly.
                 </p>
             </div>
-            <div className='mission'>
-                <h2>Mission</h2>
-                <p>Having a unique and an inviting website is beneficial for a new business to be introduced properly
-                    to the industry. My mission is to provide the first jump for your
-                    business, communicate effectively with you and enable you a new and simple way to
-                    connect with your clients through your new website!</p>
+            <div className='about'>
+            <AiOutlineCheckSquare size={50} color='#103845' />
+                <h2>Simple</h2>
+                <p>
+                Our objective is to create a simple and seamless experience for our clients, facilitating effortless navigation and effective communication.
+                </p>
+            </div>
+            <div className='about'>
+            <CgWebsite size={40} color='#103845' />
+                <h2>Expertise</h2>
+                <p>
+                My skillset encompasses web design, development, and optimization, ensuring that your website will not only look visually appealing but also perform optimally.
+                </p>
+            </div>
             </div>
         </div>
     )

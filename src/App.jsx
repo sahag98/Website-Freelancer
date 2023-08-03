@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import Work from './components/Work/Work'
 
 function App() {
 
@@ -95,6 +96,7 @@ function App() {
       <div>
         <Intro />
       </div>
+      <Work />
       <div data-aos="fade-up">
         <Services />
       </div>

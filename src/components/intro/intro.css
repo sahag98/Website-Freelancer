@@ -1,31 +1,38 @@
 .intro {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
     margin: 0px 3rem 0px 3rem;
     color: var(--primary-text-color);
 }
 
+.intro-cards{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 .about {
-    background-color: #4b7482;
-    padding: 4rem 3rem;
+    background-color: #eeeded;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 0rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
 }
 
 .about>h2{
-    color: whitesmoke;
-    margin-bottom: 1rem;
-}
-
-.mission>h2 {
-    margin-bottom: 1rem;
+    margin: 1rem 0rem 2rem 0rem;
 }
 
 
 .about>p {
     width: 100%;
     font-weight: 400;
-    color: whitesmoke;
     font-size: 1rem;
     line-height: 30px;
 }
@@ -44,28 +51,26 @@
 }
 
 @media screen and (max-width:900px) {
-    .intro {
-        flex-direction: column;
-        margin: 0rem 1rem;
-        /* margin: 0rem 0rem; */
-    }
 
     .about {
-        background-color: #4b7482;
-        padding: 2rem 1rem;
+        padding: 0rem 2rem;
         border-radius: 10px;
+        width: 350px;
+        height: 350px;
     }
 
-    .mission {
-        background-color:#becfe0;
-        padding: 2rem 1rem;
-        border-radius: 10px;
-    }
 
     .about>p {
         width: 100%;
         font-size: 1rem;
         font-weight: 300;
+    }
+
+    .intro-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 
     .mission>p {
