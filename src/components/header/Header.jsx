@@ -18,7 +18,7 @@ const Header = () => {
                             Get Started
                         </motion.button>
                     </a>
-                    <a href="#contact">
+                    <a href="#work">
                         <motion.button
                         
                             whileHover={{
