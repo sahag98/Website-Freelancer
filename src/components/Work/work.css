@@ -8,6 +8,10 @@
   border-radius: 10px;
 }
 
+.container{
+  padding: 1.5rem;
+}
+
 .title>h2{
   margin-bottom: 1rem;
   color: var(--primary-text-color);
@@ -50,9 +54,9 @@
   .work {
     display: flex;
     flex-direction: column;
-    padding: 3rem 2rem;
-    margin: 1.5rem;
-    /* width: 350px; */
+    /* padding: 3rem 2rem; */
+    width: 100%;
+    margin: 0;
   }
 
   .steps-horizontal{

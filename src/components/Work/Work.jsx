@@ -2,7 +2,8 @@ import React from 'react'
 import "./work.css"
 const Work = () => {
   return (
-    <div className='work'>
+    <div className='container'>
+    <div className='work' id='work'>
       <section className='title'>
       <h2>How does it work?</h2>
       <p>Take a look at all the steps needed to succesfully build your website.</p>
@@ -22,6 +23,7 @@ const Work = () => {
           </div>
         </ul>
       </div>
+    </div>
     </div>
   )
 }
