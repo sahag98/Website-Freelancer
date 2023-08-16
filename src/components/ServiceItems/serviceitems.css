@@ -1,5 +1,5 @@
 .service-item {
-    width: 400px;
+    max-width: 400px;
     height: 600px;
     display: flex;
     padding: 20px;
@@ -9,8 +9,13 @@
     color: var(--primary-text-color);
     flex-direction: column;
     background-color: #eaeef1;
+    transition: all 0.2s ease-in-out;
 }
-
+.service-item:hover{
+    -webkit-box-shadow: 0px 7px 39px 2px rgba(189,189,189,1);
+-moz-box-shadow: 0px 7px 39px 2px rgba(189,189,189,1);
+box-shadow: 0px 7px 39px 2px rgba(189,189,189,1);
+}
 .select-button{
     width: 100%;
     border: none;

@@ -85,7 +85,7 @@ function App() {
     await loadFull(engine);
   }, []);
   useEffect(() => {
-    AOS.init({ duration: 1800 })
+    AOS.init({ duration: 1000 })
   }, [])
 
   return (
