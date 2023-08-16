@@ -13,7 +13,9 @@ const Header = () => {
                         <motion.button
                             whileHover={{
                                 scale: 1.02,
+                                
                             }}
+                           
                             className='header-button'>
                             Get Started
                         </motion.button>
