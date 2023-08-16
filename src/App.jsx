@@ -7,7 +7,7 @@ import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/Navbar'
 import Services from './components/services/Services'
 import AOS from 'aos';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'aos/dist/aos.css';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -79,7 +79,7 @@ function App() {
     }
   };
 
-
+  const [plan, setPlan] = useState('')
 
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
@@ -98,9 +98,9 @@ function App() {
       </div>
       <Work />
       <div data-aos="fade-up">
-        <Services />
+        <Services plan={plan} setPlan={setPlan} />
       </div>
-      <Contact />
+      <Contact plan={plan} setPlan={setPlan} />
       <Footer />
     </div>
   )

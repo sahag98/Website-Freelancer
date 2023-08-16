@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './serviceitems.css'
 import { motion } from 'framer-motion'
 
-const ServiceItems = ({ id, price,bgColor,hoverColor,btnColor,textColor, title, image, description, options  }) => {
+const ServiceItems = ({ id, plan, setPlan, price,bgColor,hoverColor,btnColor,textColor, title, image, description, options  }) => {
 
     return (
         <div style={{backgroundColor:bgColor}} className='service-item'>
@@ -18,7 +18,9 @@ const ServiceItems = ({ id, price,bgColor,hoverColor,btnColor,textColor, title, 
                         </div>
                     ))}
                 </ul>
+                <a className='linkTo' href="#contact">
                 <motion.button
+                onClick={()=>setPlan(title)}
                 style={{backgroundColor:btnColor, color:textColor}} className='select-button'
                             whileHover={{
                                 scale: 1.02,
@@ -26,7 +28,7 @@ const ServiceItems = ({ id, price,bgColor,hoverColor,btnColor,textColor, title, 
                             >
                             Select Plan
                         </motion.button>
-               
+                        </a>
         </div>
     )
 }

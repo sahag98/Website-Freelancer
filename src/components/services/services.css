@@ -22,6 +22,7 @@
 
 .service-title {
     font-size: 15px;
+    margin-bottom: 0.5rem;
     color: var(--primary-text-color);
 }
 
@@ -43,6 +44,7 @@
     .items {
         display: flex;
         justify-content: center;
+        gap: 20px;
     }
 
     .service-header {
@@ -50,6 +52,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
     }
 
     .service-header>p {

@@ -3,7 +3,7 @@ import { data } from './data'
 import './services.css'
 import ServiceItems from '../ServiceItems/ServiceItems'
 
-const Services = () => {
+const Services = ({plan,setPlan}) => {
 
     return (
         <div className='services-container' id='services'>
@@ -16,6 +16,8 @@ const Services = () => {
             <div className='items'>
                 {data.map((service) => (
                     <ServiceItems
+                        plan={plan}
+                        setPlan={setPlan}
                         key={service.id}
                         id={service.id}
                         title={service.title}

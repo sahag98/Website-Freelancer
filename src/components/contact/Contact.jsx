@@ -35,7 +35,8 @@ const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-const Contact = () => {
+const Contact = ({plan, setPlan}) => {
+    const [boxOpen, setBoxOpen] = useState(false)
     const onSubmit = values => {
         console.log('form data', values)
         try {
@@ -57,6 +58,12 @@ const Contact = () => {
 
     const [open, setOpen] = useState(false);
 
+    const plans = [
+        {title: 'Basic'},
+        {title: 'Advanced'},
+        {title: 'Business'},
+    ]
+
     const handleClick = () => {
         setOpen(true);
     };
@@ -68,6 +75,8 @@ const Contact = () => {
 
         setOpen(false);
     };
+
+    console.log(plan)
 
     return (
         <div className='contact' id='contact'>
@@ -91,6 +100,15 @@ const Contact = () => {
             <div data-aos='zoom-in-up' className='contact-form'>
                 <h1>Send us a <b>message</b></h1>
                 <form onSubmit={formik.handleSubmit}>
+                    <button onClick={()=>setBoxOpen(!boxOpen)} type='button' className='select'><span>{plan ? plan : 'Select a plan'}</span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up-down"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg></button>
+                    {boxOpen &&
+                    <ul className='listbox'>
+                        {plans.map(plan=>(
+                          <li onClick={()=>{setPlan(plan.title), setBoxOpen(!boxOpen)}}>{plan.title}</li>  
+                        ))}
+                    </ul>
+                    }
                     <div>
                         <div>
                             <input
