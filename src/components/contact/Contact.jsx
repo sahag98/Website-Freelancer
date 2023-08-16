@@ -40,10 +40,18 @@ const Contact = ({plan, setPlan}) => {
     const onSubmit = values => {
         console.log('form data', values)
         try {
-            emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, values, VITE_PUBLIC_ID)
+            emailjs.send('service_vviq8ml', 'template_u6lltdh', {
+                user_email: values.user_email,
+                user_name: values.user_name,
+                message: values.message,
+                user_phone: values.user_phone,
+                plan: plan
+
+            }, 'user_d2qZiInk63cNZqWX4wPoS')
                 .then(() => {
                     formik.resetForm()
                     handleClick();
+                    setPlan('')
                 });
         }
         catch (err) {
@@ -76,8 +84,6 @@ const Contact = ({plan, setPlan}) => {
         setOpen(false);
     };
 
-    console.log(plan)
-
     return (
         <div className='contact' id='contact'>
             <div data-aos='zoom-in' className='contact-card'>
@@ -98,7 +104,7 @@ const Contact = ({plan, setPlan}) => {
                 </div>
             </div>
             <div data-aos='zoom-in-up' className='contact-form'>
-                <h1>Send us a <b>message</b></h1>
+                <h1>Send a <b>message</b></h1>
                 <form onSubmit={formik.handleSubmit}>
                     <button onClick={()=>setBoxOpen(!boxOpen)} type='button' className='select'><span>{plan ? plan : 'Select a plan'}</span> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up-down"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg></button>
@@ -182,8 +188,8 @@ const Contact = ({plan, setPlan}) => {
                             className='contact-button'>
                             Send Message
                         </motion.button>
-                        <Snackbar open={open} autoHideDuration={8000} onClose={handleClose}>
-                            <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+                        <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
+                            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                                 Thank you for sending a message! You will be contacted shortly.
                             </Alert>
                         </Snackbar>

@@ -15,8 +15,9 @@
     background-color: var(--secondary-bg);
     border-radius: 10px;
     /* background: #efefef; */
-    /* box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #eaeaea; */
+    -webkit-box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
+    -moz-box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
+    box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
 }
 
 .select{
@@ -73,6 +74,9 @@
 .contact-form {
     background-color: var(--primary-bg);
     border-radius: 10px;
+    -webkit-box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
+-moz-box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
+box-shadow: 17px 19px 19px -14px rgba(16,56,69,0.35);
 }
 
 .contact-form>h1 {
@@ -118,7 +122,7 @@ form>div {
 
 input {
     font-size: 0.875rem;
-    padding: 1rem;
+    padding: 0.7rem;
     border: 1px solid rgb(199, 199, 199);
     outline: none;
     width: 100%;
@@ -189,7 +193,7 @@ transition: all 0.3s ease-in-out;
 
     input {
         font-size: 0.7rem;
-        padding: 1rem 0.2rem;
+        padding: 0.7rem;
     }
 
     .textarea {
