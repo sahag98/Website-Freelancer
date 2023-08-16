@@ -25,7 +25,7 @@
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 5px;
     background-color: white;
     border: 1px solid rgb(199, 199, 199);
@@ -191,9 +191,13 @@ transition: all 0.3s ease-in-out;
         margin-bottom: 10px;
     }
 
+    .select{
+        padding: 1rem 0.7rem;
+    }
+
     input {
         font-size: 0.7rem;
-        padding: 0.7rem;
+        padding: 1rem 0.7rem;
     }
 
     .textarea {
