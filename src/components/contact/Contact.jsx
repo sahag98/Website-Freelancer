@@ -94,12 +94,8 @@ const Contact = ({plan, setPlan}) => {
                         <p className='info'>(661) 300-0021</p>
                     </span>
                     <span>
-                        <GoLocation size={18} style={{ marginRight: 10 }} />
-                        <p>Palmdale, CA</p>
-                    </span>
-                    <span>
                         <AiOutlineMail size={18} style={{ marginRight: 10 }} />
-                        <p>arzsahag@gmail.com</p>
+                        <p>freelancewebsite7@gmail.com</p>
                     </span>
                 </div>
             </div>

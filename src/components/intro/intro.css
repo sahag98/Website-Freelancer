@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin: 0px 5rem 50px 5rem;
+
+    margin: 0px 5rem 100px 5rem;
     color: var(--primary-text-color);
 }
 
